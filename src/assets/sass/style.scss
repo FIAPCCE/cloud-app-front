@@ -1,0 +1,126 @@
+@import 'partials/colors';
+
+body {
+    background: #f1f1f1;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.to-right {
+    float: right !important;
+}
+
+.title-form {
+    text-align: center
+}
+
+#login-section {
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0px !important;
+
+    #data-holder {
+        background: $bgForm;
+        height: 100%;
+        float: left;
+
+        #form-login {
+            width: 300px;
+            height: auto;
+            position: relative;
+            margin: 25% auto;
+            padding: 5px;
+            background: #fff;
+            border-top: darken($color: $schoolColor, $amount: 4) solid 5px;
+
+            .btn-holder {
+                position: relative;
+                overflow: auto;
+                height: auto;
+            }
+        }
+    }
+}
+
+#dashboard-content {
+    background: #fff;
+    padding: 10px;
+    max-width: 600px;
+    margin: 15vh auto;
+    border-top: darken($color: $schoolColor, $amount: 4) solid 5px;
+
+    .row {
+        a {
+            text-align: center;
+            display: block
+        }
+
+        h2 {
+            font-size: 15px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+form {
+    textarea {
+        height: 150px !important;
+        resize: none;
+    }
+
+    .form-group {
+        display: block;
+        height: auto;
+        overflow: auto;
+    }
+}
+
+#menu-dashboard {
+    background: #23282d;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    max-width: 200px;
+
+    ul {
+        padding: 0px;
+
+        li {
+            list-style: none;
+            padding: 5px;
+            display: block;
+            padding-left: 10px;
+            transition: 0.5s ease all;
+
+            &:hover {
+                background: lighten($color: #17a2b8, $amount: 5);
+                color: lighten(#fff, 30);
+            }
+
+            a,
+            a:hover,
+            a:active {
+                color: lighten(#fff, 30);
+                text-decoration: none
+            }
+        }
+    }
+}
+
+a.link-options {
+    display: block;
+    padding: 5px;
+    color: #fff;
+
+    &:hover,
+    &:active {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+h3 {
+    margin: 15px 0px !important;
+}
