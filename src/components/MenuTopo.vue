@@ -1,10 +1,15 @@
-<template lang="pug">
-  nav(class="navbar navbar-dark bg-dark justify-content-between")
-    span(class="navbar-brand") Escola App
-    div
-        a(href="/logout", class="btn btn-outline-info my-2 my-sm-0")
-            i(class="fa fa-user-circle") 
-            span  logoff
+<template>
+  <div>
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+      <span class="navbar-brand">Escola App</span>
+      <div>
+        <router-link to="/" class="btn btn-outline-info my-sm-0">
+          <i class="fa fa-user-circle"></i>
+          <span> logoff</span>
+        </router-link>
+      </div>
+    </nav>
+  </div>
 </template>
 <script>
   export default {
