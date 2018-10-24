@@ -17,8 +17,8 @@
           </div>
           <div class="form-group">
             <input v-model="senha" type="password" name="pass" class="form-control" placeholder="Senha">
-            <router-link to="/"> fazer login </router-link>
           </div>
+          <router-link to="/"> fazer login </router-link>
           <div class="form-group">
             <button @click="cadastro()" class="btn btn-primary to-right"> Cadastrar </button>
           </div>
@@ -27,11 +27,13 @@
     </div>
   </section>
 </template>
+
 <script>
 export default {
   name: 'cadastro',
-  data: function () {
+  data: () => {
     return {
+      url: 'http://localhost:4000/usuario/new',
       nome: '',
       email: '',
       senha: '',
@@ -40,10 +42,23 @@ export default {
   },
   methods: {
     cadastro: function () {
+      this.error = ''
+
       if (this.nome === '' || this.email === '' || this.senha === '') {
         this.error = 'Informe todos os dados!'
+        return false
       }
-      return false
+
+      this.$http.post(this.url, {
+        nome: this.nome,
+        email: this.email,
+        senha: this.senha
+      })
+        .then((res) => this.redirect())
+        .catch((err) => console.log(err))
+    },
+    redirect: function () {
+      this.$router.push({ name: 'home', params: { cadastro: true } })
     }
   }
 }

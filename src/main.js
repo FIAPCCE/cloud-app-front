@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import axios from 'axios'
 
 // APP Dep
 
@@ -14,6 +15,7 @@ import '@/assets/sass/style.scss'
 import '@/assets/js/scripts'
 
 Vue.config.productionTip = false
+Vue.prototype.$http = axios
 
 new Vue({
   router,

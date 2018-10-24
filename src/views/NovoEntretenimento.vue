@@ -5,14 +5,17 @@
       <div class="row">
         <menu-base></menu-base>
         <div class="col-md-10">
-          <h3> Novo Curso </h3>
-          <p>Cadastre os dados para um novo curso</p>
+          <h3> <i class="fa fa-pencil"></i> Novo Entretenimento </h3>
+          <p>Cadastre os dados para um novo entretenimento</p>
           <form action="?" method="post">
             <div class="form-group">
-              <input type="text" name="nome" class="form-control" placeholder="Nome do curso">
+              <input type="text" name="nome" class="form-control" placeholder="Nome do Entretenimento">
             </div>
             <div class="form-group">
-              <input type="text" name="ch" class="form-control" placeholder="Carga Horaria">
+              <input type="text" name="cnpj" class="form-control" placeholder="CNPJ">
+            </div>
+            <div class="form-group">
+              <input type="text" name="endereco" class="form-control" placeholder="Endereço">
             </div>
             <div class="form-group">
               <select name="categoria" class="form-control">
@@ -20,10 +23,7 @@
               </select>
             </div>
             <div class="form-group">
-              <textarea name="descricao" cols="30" rows="10" class="form-control" placeholder="Descrição do curso"></textarea>
-            </div>
-            <div class="form-group">
-              <button class="btn btn-primary to-right">Novo Curso</button>
+              <button class="btn btn-primary to-right"> <i class="fa fa-plus"></i> Novo Entretenimento</button>
             </div>
           </form>
       </div>

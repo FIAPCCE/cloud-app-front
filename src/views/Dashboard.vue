@@ -6,7 +6,7 @@
       <menu-base></menu-base>
       <div class="col-md-10">
         <div class="container">
-          <h3> <i class="fa fa-th-list"></i> Listagem dos cursos </h3>
+          <h3> <i class="fa fa-th-list"></i> Entretenimentos </h3>
           <div v-if="cursos.length > 0">
             <table class="table table-striped">
               <thead class="thead">
@@ -18,8 +18,8 @@
               <tbody>
                 <tr v-for="curso of cursos" :key="curso.nome">
                   <td> {{curso.nome}} </td>
-                  <td> 
-                    <i class="fa fa-eye"></i> <span> <router-link to=""> ver curso </router-link> </span> 
+                  <td>
+                    <i class="fa fa-eye"></i> <span> <router-link to=""> ver entretenimento </router-link> </span>
                   </td>
                 </tr>
               </tbody>
@@ -27,8 +27,8 @@
           </div>
           <div v-if="!cursos.length > 0">
             <h3> Nenhum curso cadastrado! </h3>
-            <p> por favor, cadastre um novo curso </p>
-            <router-link to="/novo-curso"> Novo Curso </router-link>
+            <p> Por favor, cadastre um novo Entretenimentos </p>
+            <router-link to="/novo-entretenimento"> Novo Entretenimentos </router-link>
           </div>
         </div>
       </div>
