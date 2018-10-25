@@ -49,7 +49,7 @@ export default {
   },
   data: function () {
     return {
-      url: 'http://localhost:4000/entretenimento/new',
+      url: 'https://startup-app-back.herokuapp.com/entretenimento/new',
       nome: '',
       cnpj: '',
       endereco: '',

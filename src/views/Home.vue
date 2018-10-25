@@ -35,7 +35,7 @@ export default {
   name: 'home',
   data: function () {
     return {
-      url: 'http://localhost:4000/usuario/login',
+      url: 'https://startup-app-back.herokuapp.com/usuario/login',
       email: '',
       senha: '',
       error: '',

@@ -49,7 +49,7 @@ export default {
   },
   data: function () {
     return {
-      url: 'http://localhost:4000/entretenimentos',
+      url: 'https://startup-app-back.herokuapp.com/entretenimentos',
       entretenimentos: {},
       message: ''
     }

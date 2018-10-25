@@ -33,7 +33,7 @@ export default {
   name: 'cadastro',
   data: () => {
     return {
-      url: 'http://localhost:4000/usuario/new',
+      url: 'https://startup-app-back.herokuapp.com/usuario/new',
       nome: '',
       email: '',
       senha: '',
